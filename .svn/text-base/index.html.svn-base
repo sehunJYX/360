@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		$(function(){
+			$('#show').click(function() {
+				$.ajax({
+					type: "get",
+					url: "http://10.2.153.130:8000/show",
+					dataType: "json",
+					success: function(data) {
+						for(i in data) {
+							console.log(data[i]);
+							$("#myul").append(
+								$("<li>" + data[i].userid + "</li>")
+							);
+							$("#myul").append(
+								$("<li>" + data[i].username + "</li>")
+							);
+							$("#myul").append(
+								$("<li>" + data[i].password + "</li>")
+							);
+						}
+					},
+					error: function() {
+						console.log('err');
+					}
+				});
+			});
+		}
+		</script>
+	</head>
+	<body>
+		<form action="http://10.2.153.130:8000/insert_post" method="POST">
+			用户名：<input type="text" name="username" id="" /> <br /> 密码： <input type="text" name="password" id="" /><br />
+			<input type="submit" name="" id="" value="sumbmit" />
+		</form>
+		<button id="show">查询</button>
+		<ul id="myul"></ul>
+
+		<form action="http://10.2.153.130:8000/login_post" method="POST">
+			用户名：<input type="text" name="username1" id="" /> <br /> 密码： <input type="text" name="password1" id="" /><br />
+			<input type="submit" name="" id="" value="登录" />
+		</form>
+
+	</body>
+
+</html>

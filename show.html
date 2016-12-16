@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="main.js" type="text/javascript" charset="utf-8"></script>-->
+		<script type="text/javascript">
+			$('#show').click(function() {
+				$.ajax({
+					type: "get",
+					url: "http://10.2.153.130:8000/show",
+					dataType: "json",
+					success: function(data) {
+						for(i in data) {
+							console.log(data[i]);
+							$("#myul").append(
+								$("<li>" + data[i].userid + "</li>")
+							);
+							$("#myul").append(
+								$("<li>" + data[i].username + "</li>")
+							);
+							$("#myul").append(
+								$("<li>" + data[i].password + "</li>")
+							);
+						}
+					},
+					error: function() {
+						console.log('err');
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<button id="show">查看用户表信息</button>
+		<ul id="myul"></ul>
+		哈哈
+	</body>
+</html>

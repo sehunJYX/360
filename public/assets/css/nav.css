@@ -1,0 +1,160 @@
+			li {
+				list-style: none;
+			}
+			
+			#xnav a {
+				text-decoration: none;
+				color: #FFFFFF;
+			}
+			
+			#xnav {
+				position: absolute;
+				right: 50px;
+				top: 40px;
+				border-bottom: 5px solid #000000;
+				padding-bottom: 10px;
+			}
+			
+			#xnav li:nth-child(1) {
+				font-size: 16px;
+			}
+			
+			#xnav>li {
+				float: left;
+			}
+			
+			#xnav>li:nth-child(3) {
+				position: absolute;
+				left: 250px;
+			}
+			
+			#xnav>li:nth-child(4) {
+				position: absolute;
+				left: 350px;
+			}
+			
+			#xnav>li:nth-child(5) {
+				position: absolute;
+				left: 450px;
+			}
+			
+			#xnav>li:nth-child(6) {
+				position: absolute;
+				left: 550px;
+			}
+			
+			.xul-2 {
+				width: 520px;
+				height: 30px;
+			}
+			
+			.xul-2 ul {
+				float: left;
+				height: 50px;
+				line-height: 50px;
+			}
+			
+			.xul-2 ul>li {
+				width: 100px;
+				float: left;
+				text-align: center;
+			}
+			
+			.xul-2>li:nth-child(1) {
+				padding-bottom: 20px;
+			}
+			
+			.xul-2>li:nth-child(2) {
+				position: absolute;
+				display: none;
+			}
+			
+			.xul-2:hover>li:nth-child(2) {
+				display: block;
+			}
+			
+			.xul-2 ul li:hover a {
+				border: 1px solid #666;
+			}
+			
+			.nnav {
+				position: relative;
+				width: 1349px;
+				height: 150px;
+				background: rgba(0, 0, 0, 0.5);
+			}
+			
+			#nnav-1 {
+				left: -546px;
+			}
+			
+			#nnav-2 {
+				left: -796px;
+			}
+			
+			#nnav-3 {
+				left: -896px;
+			}
+			
+			#nnav-4 {
+				left: -996px;
+			}
+			
+			.myDiv2,
+			.myDiv3,
+			.myDiv4,
+			.myDiv5 {
+				position: absolute;
+				width: 1349px;
+				height: 150px;
+			}
+			
+			.myDiv2>ul,
+			.myDiv3>ul,
+			.myDiv4>ul,
+			.myDiv5>ul {
+				width: 1349px;
+				height: 150px;
+			}
+			
+			.myDiv2>ul>li,
+			.myDiv3>ul>li,
+			.myDiv4>ul>li,
+			.myDiv5>ul>li {
+				float: left;
+			}
+			
+			#jinrudianpu {
+				position: absolute;
+				width: 825px;
+				height: 600px;
+				z-index: 2;
+			}
+			
+			#jinrudianpu li {
+				height: 100px;
+				width: 870px;
+				margin-left: -40px;
+				border-radius: 5px;
+			}
+			
+			#jinrudianpu li a {
+				display: inline-block;
+				width: 80px;
+				height: 40px;
+				margin-top: 20px;
+				float: right;
+				margin-right: 30px;
+				border: 2px solid #ffffff;
+				color: #FFFFFF;
+				text-decoration: none;
+				text-align: center;
+				line-height: 40px;
+			}
+			#jinrudianpu li:hover{
+				background: rgba(0,0,0,0.1);
+			}
+			#jinrudianpu li:hover a {
+				color: #666666;
+				border: 2px solid #CCCCCC;
+			}
